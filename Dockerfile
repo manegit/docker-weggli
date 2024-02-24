@@ -2,6 +2,7 @@
 FROM alpine:latest
 
 ENV USER=alpine
+ENV PATH=$PATH:/home/alpine/.cargo/bin
 
 # Install packages
 RUN apk add --update cargo sudo g++ && \

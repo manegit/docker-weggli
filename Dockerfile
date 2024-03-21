@@ -5,7 +5,7 @@ ENV USER=alpine
 ENV PATH=$PATH:/home/alpine/.cargo/bin
 
 # Install packages
-RUN apk add --update cargo sudo g++ && \
+RUN apk add --update cargo sudo g++ bash && \
 rm -rf /var/lib/apt/lists/* && \
 rm /var/cache/apk/*
 
